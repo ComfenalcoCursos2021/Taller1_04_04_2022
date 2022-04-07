@@ -2,3 +2,6 @@ label::after, label::before{
     content: '\A';
     white-space: pre;
 }
+textarea {
+    resize: none;
+}
