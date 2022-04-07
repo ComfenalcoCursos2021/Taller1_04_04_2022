@@ -5,7 +5,8 @@ let solucion = async()=>{
     let config = {
         method : from.method,
         body: JSON.stringify({
-            cadena : document.querySelector("#mensaje").value,
+            num1 : Number(document.querySelector("#num1").value),
+            num2 : Number(document.querySelector("#num2").value)
         })
     };
     let peticion = await fetch(from.action, config);

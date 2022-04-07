@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2</title>
+    <title>Ejercicio 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Realice un programa que calcule el máximo de N números leídos desde teclado.</h1>
+    <h1>Realizar un programa que pueda sumar dos números leídos por teclado y escribir el resultado.</h1>
     <hr>
-    <form id="from1" method="POST" action="ejercicio2.php">
-        <label for="mensaje">Ingrese lo que desea</label>
-        <textarea id="mensaje" cols="100" rows="10" required></textarea>
+    <form id="from1" method="POST" action="ejercicio3.php">
+        <label for="num1">Ingrese el numero 1</label>
+        <input id="num1" type="number" required>
+        <label for="num2">Ingrese el numero 2</label>
+        <input id="num2" type="number" required>
     </form>
     <div>
         <input type="submit" value="Calcular" data-accion="enviar" form="from1">
