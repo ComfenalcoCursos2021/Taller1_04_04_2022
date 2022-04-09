@@ -5,12 +5,12 @@ let solucion = async()=>{
     let config = {
         method : from.method,
         body: JSON.stringify({
-            num1 : Number(document.querySelector("#num1").value),
-            num2 : Number(document.querySelector("#num2").value)
+            N : Number(document.querySelector("#num").value),
         })
     };
     let peticion = await fetch(from.action, config);
     let res = await peticion.json();
+    // cajaMensaje.insertAdjacentHTML("beforeend", res);
     cajaMensaje.insertAdjacentHTML("beforeend", `<div>Respuesta del servidor: <b>${res.server}</b> ${res.respuesta}</div`);
 }
 from.addEventListener("submit", (e)=>{
